@@ -1,11 +1,136 @@
+
+@import "../../node_modules/breakpoint-sass/stylesheets/breakpoint";
+// COLORS
+
 $blue: #01087c;
-$base: #ffffff;
+$white: #ffffff;
 $blue-sec: #1A2189;
-$base-sec: #F9F9F9;
+$white-sec: #F9F9F9;
 $grey: #5D5D5D;
 
+// FONTS
+
 $font: 'Lato', sans-serif;
+
+// FONT SIZE
 
 $section-head: 48px;
 $nav-font: 20px;
 $base-text: 22px;
+
+// BREAKPOINTS
+
+$g-bp-xxs: 375px;
+$g-bp-xs: 544px;
+$g-bp-sm: 768px;
+$g-bp-md: 992px;
+$g-bp-lg: 1200px;
+$g-bp-xl: 1400px;
+$g-bp-xxl: 1750px;
+
+$g-bpm-xxs: (max-width 375px); // mobile small
+$g-bpm-xs: (max-width 544px); // small tab and mobile landscape
+$g-bpm-sm: (max-width 768px); // small tabs
+$g-bpm-md: (max-width 992px); // large tabs
+$g-bpm-lg: (max-width 1200px);
+$g-bpm-xl: (max-width 1400px);
+$g-bpm-xxl: (max-width 1750px);
+
+// MIXINS
+
+@mixin bp-xxs {
+    @include breakpoint($g-bp-xxs) {
+      @content;
+    }
+  }
+  @mixin bp-xs {
+    @include breakpoint($g-bp-xs) {
+      @content;
+    }
+  }
+  
+  @mixin bp-sm {
+    @include breakpoint($g-bp-sm) {
+      @content;
+    }
+  }
+  
+  @mixin bp-md {
+    @include breakpoint($g-bp-md) {
+      @content;
+    }
+  }
+  
+  @mixin bp-lg {
+    @include breakpoint($g-bp-lg) {
+      @content;
+    }
+  }
+  
+  @mixin bp-xl {
+    @include breakpoint($g-bp-xl) {
+      @content;
+    }
+  }
+  
+  @mixin bp-xxl {
+    @include breakpoint($g-bp-xxl) {
+      @content;
+    }
+  }
+  
+  //max-width breakpoints
+  @mixin bpm-xxs {
+    @include breakpoint($g-bpm-xxs) {
+      @content;
+    }
+  }
+
+  @mixin bpm-xs {
+    @include breakpoint($g-bpm-xs) {
+      @content;
+    }
+  }
+  
+  @mixin bpm-sm {
+    @include breakpoint($g-bpm-sm) {
+      @content;
+    }
+  }
+  
+  @mixin bpm-md {
+    @include breakpoint($g-bpm-md) {
+      @content;
+    }
+  }
+  
+  @mixin bp-nav {
+    @include breakpoint(977px) {
+      @content;
+    }
+  }
+  
+  @mixin bpm-nav {
+    @include breakpoint(max-width(977px - 1)) {
+      @content;
+    }
+  }
+  
+  @mixin bpm-lg {
+    @include breakpoint($g-bpm-lg) {
+      @content;
+    }
+  }
+  
+  @mixin bpm-xl {
+    @include breakpoint($g-bpm-xl) {
+      @content;
+    }
+  }
+  
+  @mixin bpm-xxl {
+    @include breakpoint($g-bpm-xxl) {
+      @content;
+    }
+  }
+

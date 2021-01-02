@@ -1,0 +1,23 @@
+
+@import "../../node_modules/breakpoint-sass/stylesheets/breakpoint";
+
+.myNavbar {
+    background-color: $blue;
+    height: 50px;
+    color: white !important;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    &__logo {
+        padding: 0px;
+        margin-left: 11.197916vw;
+    }
+    &__myNav {
+        background-color: $blue;
+    }
+}
+
+.menu {
+    color: $white !important;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 30px;
+}
