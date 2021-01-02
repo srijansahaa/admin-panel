@@ -20,7 +20,7 @@ function Navbar() {
                 </button>
                 
                 <div className="collapse navbar-collapse justify-content-end  myNavbar__myNav" id="navbar-content">
-                    <div className="navbar-nav" style={{marginRight: "153px"}}>
+                    <div className="navbar-nav" style={{marginRight: "93px"}}>
                         <a className="nav-link menu" href="#">Home</a>
                         <a className="nav-link menu" href="#">About</a>
                         <a className="nav-link menu" href="#">Skills</a>
