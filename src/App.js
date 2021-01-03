@@ -1,4 +1,5 @@
 import About from './components/About'
+import Experience from './components/Experience'
 import Landing from './components/Landing'
 import Navbar from './components/Navbar'
 import Skills from './components/Skills'
@@ -11,6 +12,7 @@ function App() {
       <Landing/>
       <About />
       <Skills />
+      <Experience />
     </div>
   );
 }
