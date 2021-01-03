@@ -25,3 +25,21 @@
     font-size: $nav-font;
     font-weight: bold;
 }
+
+.longButton {
+    background-color: $blue;
+    color: $white;
+    width: 202px;
+    height: 45px;
+    border-radius: 20.5px;
+    border: none;
+    font-size: $nav-font;
+    font-weight: bold;
+    margin-top: 12px;
+    &:hover {
+        border-radius: 20.5px;
+        border: solid 2px $blue;
+        background-color: $white;
+        color: $blue;
+    }
+}

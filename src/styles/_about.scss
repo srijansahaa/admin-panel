@@ -1,0 +1,25 @@
+.aboutLeft {
+    .me {
+        width: 321px;
+        height: 452px;
+        border-radius: 31px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.57);
+    }
+}
+
+.aboutRight {
+    display: flex;
+    justify-content: center;
+    
+    h2 {
+        font-size: 36px;
+        font-weight: bold;
+        color: $blue;
+    }
+    p {
+        font-size: $base-text;
+        line-height: 1.38;
+        color: $grey;
+        margin: 12px 0;
+    }
+}

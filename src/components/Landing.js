@@ -6,7 +6,7 @@ import LandingImg from '../assets/Landing.png'
 function Landing() {
     return (
         <div className="container">
-            <div className="row align-items-center" style={{height: "680px"}}>
+            <div className="row align-items-center" style={{height: "710px"}}>
                 <div className="col landingLeft">
                     <h1>Hey</h1>
                     <h1>I am <span>Srijan</span></h1>

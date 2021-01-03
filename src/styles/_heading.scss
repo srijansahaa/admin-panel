@@ -1,0 +1,15 @@
+.secHeadings {
+    color: $blue;
+    font-size: $section-head;
+    font-weight: 900;
+    letter-spacing: 2.4px;
+    text-transform: uppercase !important;
+    margin-bottom: 55px;
+    &:after {
+        content: "";
+        width: 86px;
+        height: 9px;
+        display: inline-block;
+        background: $blue;
+    }
+}
