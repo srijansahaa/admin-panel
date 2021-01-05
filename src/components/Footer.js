@@ -8,12 +8,13 @@ import Instagram from '../assets/Icons/Instagram.svg';
 import Github from '../assets/Icons/Github.svg';
 import Email from '../assets/Icons/Email.svg';
 import Behance from '../assets/Icons/Behance.svg';
+import {Link} from 'react-router-dom';
 
 function Footer() {
     return (
         <div className="container footer">
             <div className="row">
-                <div className="col d-flex justify-content-start align-items-center"><a href="#"><LazyLoadImage style={{margin: "85px"}} src={Icon}/></a></div>
+                <div className="col d-flex justify-content-start align-items-center"><Link to="/"><LazyLoadImage style={{margin: "85px"}} src={Icon}/></Link></div>
                 <div className="col d-flex justify-content-center flex-column">
                     <div className="d-flex justify-content-center">
                         {/* <a href="https://www.linkedin.com/in/srijan-saha/" className="footer__icons"><i class="fab fa-facebook icon-last icons"></i></a>

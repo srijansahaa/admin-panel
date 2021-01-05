@@ -2,6 +2,11 @@ import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Button from './Button';
 import LandingImg from '../assets/Landing.png'
+import {
+    Route,
+    Link,
+    Switch
+  } from "react-router-dom";
 
 function Landing() {
     return (
@@ -13,8 +18,8 @@ function Landing() {
                     <h1>A Web Developer</h1>
 
                     <div className="d-flex justify-content-between" style={{marginTop: "30px"}}>
-                        <div><Button text={"Websites"} version={"blockButton"}/></div>
-                        <div><Button text={"UI Designs"} version={"blockButton"}/></div>
+                        <div><Link to="/work"><Button text={"Websites"} version={"blockButton"}/></Link></div>
+                        <div><Link to="/work"><Button text={"UI Designs"} version={"blockButton"}/></Link></div>
                         <div><Button text={"Posters"} version={"blockButton"}/></div>
                     </div>
                 </div>

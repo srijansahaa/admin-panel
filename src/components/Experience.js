@@ -7,7 +7,7 @@ function Experience() {
     return (
         <div>
             <div className="d-flex justify-content-center">
-                <Heading heading={"Experience"}/>
+                <Heading heading={"Experience"} version={"secHeadings"}/>
             </div>
             <div className="container">
                 <div className="row d-flex justify-content-around">

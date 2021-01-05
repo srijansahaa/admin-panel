@@ -6,9 +6,9 @@ import Me from '../assets/Me.jpg'
 
 function About() {
     return (
-        <div>
+        <div id="about">
             <div className="container d-flex justify-content-center">
-                <div><Heading heading={"ABOUT"}/></div>
+                <div><Heading heading={"ABOUT"} version={"secHeadings"}/></div>
             </div>
             <div className="container">
             <div className="row">

@@ -16,7 +16,7 @@ function Skills() {
     return (
         <div>
             <div className="d-flex justify-content-center">
-                <Heading heading={"Skills"}/>
+                <Heading heading={"Skills"} version={"secHeadings"}/>
             </div>
             <div className="container">
                 <div className="row" style={{display: "flex", justifyContent: "space-evenly"}}>

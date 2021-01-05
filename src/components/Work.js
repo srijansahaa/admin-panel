@@ -13,7 +13,7 @@ function Work() {
     return (
         <div>
             <div className="d-flex justify-content-center">
-                <Heading heading={"Work"}/>
+                <Heading heading={"Work"} version={"secHeadings"}/>
             </div>
             <div className="container">
                 <div className="row d-flex justify-content-around workRows">
