@@ -1,6 +1,35 @@
 .contact {
+    margin-top: 100px;
     display: flex;
-    justify-content: center;
+    // justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: $blue;
-    width: 60%;
+    color: $white;
+    width: 45%;
+    border-radius: 20px;
+    padding-bottom: 40px;
+    form {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    label {
+        font-size: 36px;
+        font-weight: bold;
+        letter-spacing: 1.8px;
+        margin-left: 28px;
+    }
+    &__input {
+        border-radius: 20px;
+        width: 37.5vw;
+        height: 66px;
+        margin: 14px 0;
+        padding-left: 10px;
+        font-weight: 900;
+    }
+    textarea {
+        height: 223px;
+        margin-bottom: 47px;
+    }
 }
