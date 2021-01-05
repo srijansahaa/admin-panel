@@ -14,36 +14,43 @@ function Experience() {
                     <Experiencetype 
                         position={"Creatives Associate"}
                         company={"Alexa Developers SRM"}
+                        link="https://alexadevsrm.com/"
                     />
                     <Experiencetype 
                         position={"Web Developer"}
                         company={"Solera Life Sciences Private Limited"}
+                        link="https://soleralife.com/"
                     />
                 </div>
                 <div className="row d-flex justify-content-around">
                     <Experiencetype 
                         position={"Director of Media & Content"}
                         company={"Rotaract Club of SRM"}
+                        link="https://rotaractsrm.in/"
                     />
                     <Experiencetype 
                         position={"UI/UX Designer"}
                         company={"Elixar"}
+                        link="https://elixar.tech/"
                     />
                 </div>
                 <div className="row d-flex justify-content-around">
                     <Experiencetype 
                         position={"Office Bearer"}
                         company={"SRM IET On Campus"}
+                        link="https://www.theiet.org/"
                     />
                     <Experiencetype 
                         position={"Campus Ambassador"}
                         company={"National Engineering Olympiad"}
+                        link="https://nationalolympiad.org/"
                     />
                 </div>
                 <div className="row d-flex justify-content-around">
                     <Experiencetype 
                         position={"Initiatives Member"}
                         company={"AARUUSH - National Level Fest"}
+                        link="https://aaruush.org/"
                     />
                 </div>
             </div>

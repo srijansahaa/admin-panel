@@ -16,34 +16,34 @@ function Experiencelogos() {
                         src={elixar}
                         style={{width: "242px"}}
                     />
-                <LazyLoadImage
-                    src={IET}
-                    style={{width: "327px"}}
-                />
+                    <LazyLoadImage
+                        src={IET}
+                        style={{width: "327px"}}
+                    />
             </div>
             <div className="row d-flex justify-content-between">
                     <LazyLoadImage
                         src={Alexa}
                         style={{width: "430px"}}
                     />
-                <LazyLoadImage
-                    src={Aaruush}
-                    style={{width: "278px"}}
-                />
+                    <LazyLoadImage
+                        src={Aaruush}
+                        style={{width: "278px"}}
+                    />
             </div>
             <div className="row d-flex justify-content-between">
                     <LazyLoadImage
                         src={Solera}
                         style={{width: "103.5px", padding: "0"}}
                     />
-                <LazyLoadImage
-                    src={Rotaract}
-                    style={{width: "420px"}}
-                />
-                <LazyLoadImage
-                    src={NEO}
-                    style={{width: "93px"}}
-                />
+                    <LazyLoadImage
+                        src={Rotaract}
+                        style={{width: "420px"}}
+                    />
+                    <LazyLoadImage
+                        src={NEO}
+                        style={{width: "93px"}}
+                    />
             </div>
         </div>
     )
