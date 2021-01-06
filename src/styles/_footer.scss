@@ -18,25 +18,14 @@
     .fab, .fas {
         margin: 30px;
         margin-bottom: 0px;
+        :hover {
+            -webkit-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+            -moz-box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+            box-shadow: 5px 5px 15px rgba(0,0,0,0.4);
+            transform: rotate(20deg);
+        }
     }
-    &__icons::before {
-        content: "";
-        position: absolute; 
-        width: 5px; 
-        height: 5px;
-        border-radius: 50%; 
-        bottom: O;
-        opacity: O; 
-        transition: all 0.4s; 
-    }
-    &__icons:hover::before { opacity: 1;}
-    i {
-        transform: translateY(0);
-        transition: all 0.4s;
-    }
-    &__icons:hover i {
-        transform: translateY(-10px);
-    }
+    
     &__credits {
         font-size: 24px;
         font-weight: 900;
