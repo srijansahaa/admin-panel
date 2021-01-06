@@ -20,7 +20,7 @@ function Landing() {
                     <div className="d-flex justify-content-between" style={{marginTop: "30px"}}>
                         <div><Link to="/work"><Button text={"Websites"} version={"blockButton"}/></Link></div>
                         <div><Link to="/work"><Button text={"UI Designs"} version={"blockButton"}/></Link></div>
-                        <div><Button text={"Posters"} version={"blockButton"}/></div>
+                        <div><a href="https://drive.google.com/drive/folders/1teAx4DUSiy4rCmV1m6Hxd3iUxQFozg4X?usp=sharing"><Button text={"Posters"} version={"blockButton"}/></a></div>
                     </div>
                 </div>
                 <div className="col d-flex justify-content-center">
