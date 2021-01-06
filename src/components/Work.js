@@ -20,36 +20,43 @@ function Work() {
                     <Worktiles
                         image={ReadyGo}
                         link={"https://readygo.netlify.app/"}
+                        type={"WEBSITE"}
                     />
                     <Worktiles
                         image={WeatherFinder}
                         link={"https://find-your-weather.netlify.app/"}
+                        type={"WEBSITE"}
                     />
                 </div>
                 <div className="row d-flex justify-content-around workRows">
                     <Worktiles
                         image={ZimbabweEmbassy}
                         link={"https://zimbabweembassy.netlify.app/"}
+                        type={"WEBSITE"}
                     />
                     <Worktiles
                         image={Unsplash}
                         link={"https://unsplashimagegallery.netlify.app/"}
+                        type={"WEBSITE"}
                     />
                 </div>
                 <div className="row d-flex justify-content-around workRows">
                     <Worktiles
                         image={InstructorHQ}
                         link={"https://xd.adobe.com/view/9e5d15f2-523e-497b-42c5-508938d2f8c4-e86c/?fullscreen"}
+                        type={"UI DESIGN"}
                     />
                     <Worktiles
                         image={Maynooth}
                         link={"https://xd.adobe.com/view/ad6fd2c3-3695-4ef1-5341-0c516779dea8-db5e/?fullscreen"}
+                        type={"UI DESIGN"}
                     />
                 </div>
                 <div className="row d-flex justify-content-around workRows">
                     <Worktiles
                         image={RentedPlanet}
                         link={"https://www.figma.com/file/I1dduSEBxhOde77icGT17A/UI?node-id=0%3A1"}
+                        type={"UI DESIGN"}
                     />
                 </div>
             </div>
