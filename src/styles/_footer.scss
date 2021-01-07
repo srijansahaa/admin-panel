@@ -1,12 +1,24 @@
 .footer {
     background-color: $blue;
+    // @include breakpoint ($bpm-md) {
+    //     background-color: #e41717;
+    // }
     margin: 0;
     margin-top: 165px;
     max-width: 100%;
     color: $white;
     height: 38.08vh;
+    position: absolute;
+    @include breakpoint ($bpm-sm) {
+        height: 75vh;
+    }
     .row {
         height: 100%;
+    }
+    &__Left {
+        @include breakpoint ($bpm-sm) {
+            justify-content: center !important;
+        }
     }
     img {
         width: 57px;
