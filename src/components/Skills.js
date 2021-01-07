@@ -48,7 +48,7 @@ function Skills() {
                         name={"BOOTSTRAP"}
                         percentage={"80%"}
                         bar="80%"
-                        icon={ReactIcon}
+                        icon={bootstrapIcon}
                     />
                     <Skillset
                         name={"UI/UX"}
