@@ -3,9 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Button from './Button';
 import LandingImg from '../assets/Landing.png'
 import {
-    Route,
     Link,
-    Switch
   } from "react-router-dom";
 
 function Landing() {

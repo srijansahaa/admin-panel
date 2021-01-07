@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Button from './Button';
 import Heading from './Heading';
 import {db} from '../firebase';
 
