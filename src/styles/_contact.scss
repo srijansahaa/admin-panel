@@ -9,6 +9,9 @@
     width: 45%;
     border-radius: 20px;
     padding-bottom: 40px;
+    @include breakpoint ($bpm-md) {
+        width: 90%;
+    }
     form {
         display: flex;
         align-items: center;
@@ -27,6 +30,9 @@
         margin: 14px 0;
         padding-left: 10px;
         font-weight: 900;
+        @include breakpoint ($bpm-md) {
+            width: 70vw;
+        }
     }
     textarea {
         padding-top: 10px;
