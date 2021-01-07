@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react'
 import Footer from './components/Footer'
 import Navbar from './components/Navbar'
 import Loader from './components/Loader';
+import Whatsapp from './components/Whatsapp';
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -18,6 +19,7 @@ function App() {
         loading === false ? (
           <div className="App">
             <Navbar />
+            <Whatsapp/>
             <Footer />
           </div>
         ) : (
