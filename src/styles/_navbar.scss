@@ -1,14 +1,12 @@
-
-@import "../../node_modules/breakpoint-sass/stylesheets/breakpoint";
-
 .myNavbar {
     background-color: $blue;
+    @include breakpoint ($bpm-md) {
+    }
     height: 50px;
     color: white !important;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
     &__logo {
         padding: 0px;
-        // margin-left: 11.197916vw;
         margin-left: 6vw;
     }
     &__myNav {
