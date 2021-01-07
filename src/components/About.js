@@ -13,13 +13,13 @@ function About() {
             <div className="container aboutMain">
                 <div className="row">
                     <div className="row">
-                        <div className="col-5 d-flex justify-content-center aboutLeft">
+                        <div className="col-lg-5 col-12 d-flex justify-content-center aboutLeft">
                             <LazyLoadImage
                                 src={Me}
                                 className="me"
                             />
                         </div>
-                        <div className="col-7 d-flex flex-column aboutRight">
+                        <div className="col-lg-7 col-12 d-flex flex-column aboutRight">
                             <h2>I am Srijan</h2>
                             <p>
                                 I'm a Computer Science Undergrad at SRMIST, Chennai

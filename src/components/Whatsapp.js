@@ -1,13 +1,12 @@
 import React from 'react'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
-import { ReactSVG } from 'react-svg'
 import whatsappIcon from '../assets/Icons/whatsapp.png'
 
 function Whatsapp() {
     return (
-        <div className="whatsapp">
+        <a href="https://wa.me/918225808241?text=Hey%20there!" className="whatsapp">
             <LazyLoadImage width="30" src={whatsappIcon}/>
-        </div>
+        </a>
     )
 }
 
