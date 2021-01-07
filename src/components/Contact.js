@@ -70,8 +70,6 @@ function Contact() {
                         <textarea 
                             className="contact__input" 
                             placeholder="What's in your mind?" 
-                            rows="4" 
-                            cols="50"
                             value={message}
                             onChange={(e) => setMessage(e.target.value)}
                         />
