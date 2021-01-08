@@ -3,6 +3,7 @@ import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Button from './Button'; 
 import Heading from './Heading';
 import Me from '../assets/Me.jpg'
+import Srijan from '../assets/SrijanSaha.pdf'
 
 function About() {
     return (
@@ -28,7 +29,7 @@ function About() {
                                 the challenge of leading interactions and visual design. I avoid
                                 vague meetings & hasty reactions.
                             </p>
-                            <a href="https://drive.google.com/file/d/146mHPXNZ6_TvQrW_a93e2C-uHU1EVKCR/view?usp=sharing">
+                            <a href={Srijan} download>
                                 <Button text={"Download Resume"} version={"longButton"}/>
                             </a>
                         </div>
