@@ -9,6 +9,7 @@ import {
 import Contact from './Contact';
 import Landing from './Landing';
 import About from './About';
+import Experience from './Experience';
 import Work from './Work';
 import Skills from './Skills';
 
@@ -46,25 +47,21 @@ function Navbar() {
                 <Route exact path="/">
                     <Landing/>
                     <About/>
+                    <Experience/>
                     <Skills/>
                     <Work/>
-                    {/* <Footer/> */}
                 </Route>
                 <Route exact path="/about">
                     <About/>
-                    {/* <Footer/> */}
                 </Route>
                 <Route exact path="/skills">
                     <Skills/>
-                    {/* <Footer/> */}
                 </Route>
                 <Route exact path="/work">
                     <Work/>
-                    {/* <Footer/> */}
                 </Route>
                 <Route exact path="/contact">
                     <Contact/>
-                    {/* <Footer/> */}
                 </Route>
             </Switch>
         </div>
