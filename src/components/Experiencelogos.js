@@ -11,7 +11,7 @@ import NEO from '../assets/Logos/final/NEO.png';
 function Experiencelogos() {
     return (
         <div className="container experienceLogos">
-            <div className="row d-flex justify-content-sm-between  justify-content-lg-between justify-content-between">
+            <div className="row d-flex justify-content-sm-between justify-content-lg-between justify-content-between">
                     <LazyLoadImage
                         src={elixar}
                         style={{width: "242px"}}
