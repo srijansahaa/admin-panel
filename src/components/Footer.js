@@ -14,8 +14,8 @@ function Footer() {
     return (
         <div className="container footer">
             <div className="row">
-                <div className="col d-flex justify-content-start align-items-center footer__Left"><Link to="/"><LazyLoadImage style={{margin: "85px"}} src={Icon}/></Link></div>
-                <div className="col d-flex justify-content-center flex-column">
+                <div className="col-12 col-md-4 d-flex justify-content-start align-items-center footer__Left"><Link to="/"><LazyLoadImage src={Icon}/></Link></div>
+                <div className="col-12 col-md-4 d-flex justify-content-center flex-column">
                     <div className="d-flex justify-content-center">
                         <a href="https://www.facebook.com/srijan.saha3" className="footer__icons"><ReactSVG className="fab icon-last icons" src={Facebook}/></a>
                         <a href="https://www.linkedin.com/in/srijan-saha/" className="footer__icons"><ReactSVG className="fab icon-last icons" src={Linkedin}/></a>
@@ -28,7 +28,7 @@ function Footer() {
                     </div>
                     <div className="d-flex justify-content-center footer__credits">Made with  &hearts;  by Srijan Saha !</div>
                 </div>
-                <div className="col d-flex justify-content-center align-items-center footer__copyright">© Copyright 2020</div>
+                <div className="col-12 col-md-4 d-flex justify-content-center align-items-center footer__copyright">© Copyright 2020</div>
             </div>
         </div>
     )

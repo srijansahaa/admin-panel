@@ -28,7 +28,9 @@ function About() {
                                 the challenge of leading interactions and visual design. I avoid
                                 vague meetings & hasty reactions.
                             </p>
-                            <Button text={"Download Resume"} version={"longButton"}/>
+                            <a href="https://drive.google.com/file/d/146mHPXNZ6_TvQrW_a93e2C-uHU1EVKCR/view?usp=sharing">
+                                <Button text={"Download Resume"} version={"longButton"}/>
+                            </a>
                         </div>
                     </div>
                 </div>

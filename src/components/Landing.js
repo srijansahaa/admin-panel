@@ -16,7 +16,7 @@ function Landing() {
                     <h1>A <span className="textChange"></span></h1>
 
                     <div className="d-flex justify-content-between buttonContainer" style={{marginTop: "30px"}}>
-                        <div className="landingButtons"><Link to="/work"><Button text={"Websites"} version={"blockButton"}/></Link></div>
+                        <div className="landingButtons"><Link to="/work"><Button text={"Websites"} version={"blockButton"} link={"/"}/></Link></div>
                         <div className="landingButtons"><Link to="/work"><Button text={"UI Designs"} version={"blockButton"}/></Link></div>
                         <div className="landingButtons"><a href="https://drive.google.com/drive/folders/1teAx4DUSiy4rCmV1m6Hxd3iUxQFozg4X?usp=sharing"><Button text={"Posters"} version={"blockButton"}/></a></div>
                     </div>

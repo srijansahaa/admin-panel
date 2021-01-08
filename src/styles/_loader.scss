@@ -9,6 +9,9 @@
     font-family: Lato;
     font-size: 64px;
     font-weight: 900;
+    @include breakpoint ($bpm-sm) {
+        height: 800px;
+    }
     span {
         &::before {
             content: "...";
