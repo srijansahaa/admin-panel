@@ -22,7 +22,7 @@ function Navbar() {
                         <LazyLoadImage
                             className="navbar-brand myNavbar__logo"
                             src={Logo_darkbg}
-                            alt="..."
+                            alt="Srijan Saha"
                             width="30"
                             height="30"
                         />
@@ -33,7 +33,7 @@ function Navbar() {
                     </button>
                     
                     <div className="collapse navbar-collapse justify-content-end  myNavbar__myNav" id="navbar-content">
-                        <div className="navbar-nav" style={{marginRight: "93px"}}>
+                        <div className="navbar-nav myNavbar__myNav--dropdown">
                             <Link className="nav-link menu" to="/" style={{textDecoration: "none", color: "#fff"}}>Home</Link>
                             <Link className="nav-link menu" to="/about" style={{textDecoration: "none", color: "#fff"}}>About</Link>
                             <Link className="nav-link menu" to="/skills" style={{textDecoration: "none", color: "#fff"}}>Skills</Link>

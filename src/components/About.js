@@ -18,6 +18,7 @@ function About() {
                             <LazyLoadImage
                                 src={Me}
                                 className="me"
+                                alt="Srijan Saha"
                             />
                         </div>
                         <div className="col-lg-7 col-12 d-flex flex-column aboutRight">

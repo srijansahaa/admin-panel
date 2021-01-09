@@ -22,7 +22,7 @@ function Landing() {
                     </div>
                 </div>
                 <div className="col d-flex justify-content-center">
-                    <div><LazyLoadImage src={LandingImg}/></div>
+                    <div><LazyLoadImage src={LandingImg} alt="Web Developer and Designer"/></div>
                 </div>
             </div>
         </div>

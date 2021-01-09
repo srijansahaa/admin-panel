@@ -11,6 +11,18 @@
     }
     &__myNav {
         background-color: $blue;
+        width: 100%;
+        // background-color: red;
+        @include breakpoint ($bpm-md) {
+            border-radius: 0 0 15px 15px;
+            text-align: center;
+        }
+        &--dropdown {
+            padding-right: 93px;
+            @include breakpoint ($bpm-md) {
+                padding-right: 0px
+            }
+        }
     }
 }
 
