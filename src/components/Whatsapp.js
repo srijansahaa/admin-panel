@@ -5,7 +5,7 @@ import whatsappIcon from '../assets/Icons/whatsapp.png'
 function Whatsapp() {
     return (
         <a href="https://wa.me/918225808241?text=Hey%20there!" className="whatsapp">
-            <LazyLoadImage width="30" src={whatsappIcon}/>
+            <LazyLoadImage width="30" src={whatsappIcon} alt="Whatsapp"/>
         </a>
     )
 }

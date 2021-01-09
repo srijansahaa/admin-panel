@@ -15,34 +15,41 @@ function Experiencelogos() {
                     <LazyLoadImage
                         src={elixar}
                         style={{width: "242px"}}
+                        alt="Elixar"
                     />
                     <LazyLoadImage
                         src={IET}
                         style={{width: "327px"}}
+                        alt="SRM IET On Campus"
                     />
             </div>
             <div className="row d-flex justify-content-between">
                     <LazyLoadImage
                         src={Alexa}
                         style={{width: "430px"}}
+                        alt="Alexa Developers SRM"
                     />
                     <LazyLoadImage
                         src={Aaruush}
                         style={{width: "278px"}}
+                        alt="Aaruush - Techno Management Fest"
                     />
             </div>
             <div className="row d-flex justify-content-between">
                     <LazyLoadImage
                         src={Solera}
                         style={{width: "103.5px", padding: "0"}}
+                        alt="Solera"
                     />
                     <LazyLoadImage
                         src={Rotaract}
                         style={{width: "420px"}}
+                        alt="Rotaract Club of SRM"
                     />
                     <LazyLoadImage
                         src={NEO}
                         style={{width: "93px"}}
+                        alt="National Engineering Olympiad"
                     />
             </div>
         </div>
