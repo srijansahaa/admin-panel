@@ -39,7 +39,7 @@ function App() {
             </div>
           </div>
         ) : (
-          <Loader/>
+          <Loader themeType={darkTheme ? "dark-theme" : "light-theme"}/>
         )
       }
     </>
