@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Logo_darkbg from '../assets/Logos/Logo_darkbg.png';
 import {
@@ -13,9 +13,9 @@ import Experience from './Experience';
 import Work from './Work';
 import Skills from './Skills';
 
-function Navbar() {
+function Navbar(themeType) {
     return (
-        <div>
+        <div className={themeType.themeType}>
             <nav className="navbar navbar-dark navbar-expand-lg fixed-top myNavbar">
                 <div className="container">
                     <Link to="/">
@@ -45,23 +45,23 @@ function Navbar() {
             </nav>
             <Switch>
                 <Route exact path="/">
-                    <Landing/>
-                    <About/>
-                    <Experience/>
-                    <Skills/>
-                    <Work/>
+                    <Landing themeType={themeType}/>
+                    <About themeType={themeType}/>
+                    <Skills themeType={themeType}/>
+                    <Experience themeType={themeType}/>
+                    <Work themeType={themeType}/>
                 </Route>
                 <Route exact path="/about">
-                    <About/>
+                    <About themeType={themeType}/>
                 </Route>
                 <Route exact path="/skills">
-                    <Skills/>
+                    <Skills themeType={themeType}/>
                 </Route>
                 <Route exact path="/work">
-                    <Work/>
+                    <Work themeType={themeType}/>
                 </Route>
                 <Route exact path="/contact">
-                    <Contact/>
+                    <Contact themeType={themeType}/>
                 </Route>
             </Switch>
         </div>

@@ -1,49 +1,107 @@
-.experienceType {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    width: 30%;
-    &__position {
-        font-size: 30px;
-        font-weight: bold;
-        color: $blue;
-        text-align: center;
-    }
-    &__company {
-        font-size: $base-text;
-        font-style: italic;
-        color: $grey;
-        text-align: center;
-        text-decoration: none;
-    }
-    &__border {
-        border-bottom: 2px solid $blue !important;
-        margin-bottom: 30px;
-        // width: 30%;
-        text-align: center;
+.light-theme {
+    .experienceType {
         display: flex;
         justify-content: center;
-        margin-top: 15px;
+        flex-direction: column;
+        // width: 30%;
+        &__position {
+            font-size: 30px;
+            font-weight: bold;
+            color: $blue;
+            text-align: center;
+        }
+        &__company {
+            font-size: $base-text;
+            font-style: italic;
+            color: $grey;
+            text-align: center;
+            text-decoration: none;
+        }
+        &__border {
+            border-bottom: 2px solid $blue !important;
+            margin-bottom: 30px;
+            // width: 30%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
     }
 }
 
-.experienceLogos {
-    width: 1077px;
-    height: 388px;
-    border-radius: 20px;
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
-    background-color: #f9f9f9;
-    padding: 40.5px 148px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    &:hover {
-        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+.dark-theme {
+    .experienceType {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        // width: 30%;
+        &__position {
+            font-size: 30px;
+            font-weight: bold;
+            color: $white;
+            text-align: center;
+        }
+        &__company {
+            font-size: $base-text;
+            font-style: italic;
+            color: $white;
+            text-align: center;
+            text-decoration: none;
+        }
+        &__border {
+            border-bottom: 2px solid $white !important;
+            margin-bottom: 30px;
+            // width: 30%;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
     }
-    @include breakpoint ($bpm-md) {
-        padding: 20px 50px;
+}
+
+.light-theme {
+    .experienceLogos {
+        width: 1077px;
+        height: 388px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+        background-color: #f9f9f9;
+        padding: 40.5px 148px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &:hover {
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+        }
+        @include breakpoint ($bpm-md) {
+            padding: 20px 50px;
+        }
+        @include breakpoint ($bpm-sm) {
+            display: none;
+        }
     }
-    @include breakpoint ($bpm-sm) {
-        display: none;
+}
+
+.dark-theme {
+    .experienceLogos {
+        width: 1077px;
+        height: 388px;
+        border-radius: 20px;
+        box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.1);
+        background-color: $dt-grey;
+        padding: 40.5px 148px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &:hover {
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+        }
+        @include breakpoint ($bpm-md) {
+            padding: 20px 50px;
+        }
+        @include breakpoint ($bpm-sm) {
+            display: none;
+        }
     }
 }

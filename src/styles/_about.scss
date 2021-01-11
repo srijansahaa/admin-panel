@@ -1,44 +1,93 @@
-.aboutLeft {
-    .me {
-        width: 321px;
-        height: 452px;
-        border-radius: 31px;
-        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.57);
-    }
-}
-
-.aboutRight {
-    display: flex;
-    justify-content: center;
-    @include breakpoint ($bpm-md) {
-        padding-right: 0;
-        margin-top: 20px;
-        align-items: center;
-    }
-    @include breakpoint ($bpm-md) {
+.light-theme {
+    .aboutLeft {
+        .me {
+            width: 321px;
+            height: 452px;
+            border-radius: 31px;
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.57);
+        }
     }
     
-    h2 {
-        font-size: 36px;
-        font-weight: bold;
-        color: $blue;
-    }
-    p {
-        font-size: $base-text;
-        line-height: 1.5;
-        color: $grey;
-        margin: 12px 0;
-        padding-right: 90px;
-        text-align: justify;
+    .aboutRight {
+        display: flex;
+        justify-content: center;
         @include breakpoint ($bpm-md) {
             padding-right: 0;
+            margin-top: 20px;
+            align-items: center;
+        }
+        @include breakpoint ($bpm-md) {
+        }
+        
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color: $blue;
+        }
+        p {
+            font-size: $base-text;
+            line-height: 1.5;
+            color: $grey;
+            margin: 12px 0;
+            padding-right: 90px;
             text-align: justify;
+            @include breakpoint ($bpm-md) {
+                padding-right: 0;
+                text-align: justify;
+            }
+        }
+    }
+    
+    .aboutMain {
+        @include breakpoint ($bpm-sm) {
+            flex-direction: column !important;
         }
     }
 }
 
-.aboutMain {
-    @include breakpoint ($bpm-sm) {
-        flex-direction: column !important;
+.dark-theme {
+    .aboutLeft {
+        .me {
+            width: 321px;
+            height: 452px;
+            border-radius: 31px;
+            box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.57);
+        }
+    }
+    
+    .aboutRight {
+        display: flex;
+        justify-content: center;
+        @include breakpoint ($bpm-md) {
+            padding-right: 0;
+            margin-top: 20px;
+            align-items: center;
+        }
+        @include breakpoint ($bpm-md) {
+        }
+        
+        h2 {
+            font-size: 36px;
+            font-weight: bold;
+            color: $white;
+        }
+        p {
+            font-size: $base-text;
+            line-height: 1.5;
+            color: $white;
+            margin: 12px 0;
+            padding-right: 90px;
+            text-align: justify;
+            @include breakpoint ($bpm-md) {
+                padding-right: 0;
+                text-align: justify;
+            }
+        }
+    }
+    
+    .aboutMain {
+        @include breakpoint ($bpm-sm) {
+            flex-direction: column !important;
+        }
     }
 }
