@@ -104,3 +104,18 @@
         color: $blue;
     }
 }
+
+.darkSButton {
+    width: 119px;
+    height: 45px;
+    background-color: $dt-grey;
+    color: $white;
+    border-radius: 20.5px;
+    border: solid 1px $white;
+    font-size: 20px;
+    font-weight: 900;
+    &:hover {
+        background-color: $white;
+        color: $dt-grey;
+    }
+}

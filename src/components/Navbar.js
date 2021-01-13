@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Logo_darkbg from '../assets/Logos/Logo_darkbg.png';
 import {

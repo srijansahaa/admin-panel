@@ -8,7 +8,7 @@ const Worktiles = ({image, link, type, themeType}) => {
                 <div className="workTiles__overlay">
                     <h1>{type}</h1>
                     <a href={link}>
-                        <Button text={"CLICK"} version={"sButton"}/>
+                        <Button text={"CLICK"} version={themeType  === "dark-theme" ? "darkSButton" : "sButton"}/>
                     </a>
                 </div>
             </div>
