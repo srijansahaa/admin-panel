@@ -15,6 +15,23 @@
     }
 }
 
+.darkBlockButton {
+    background-color: $white;
+    color: $dt-black;
+    width: 150px;
+    height: 45px;
+    border-radius: 20.5px;
+    border: none;
+    font-size: $nav-font;
+    font-weight: bold;
+    &:hover {
+        border-radius: 20.5px;
+        border: solid 2px $white;
+        background-color: $dt-black;
+        color: $white;
+    }
+}
+
 .outlineButton {
     background-color: $white;
     color: $blue;
@@ -22,6 +39,17 @@
     height: 45px;
     border-radius: 20.5px;
     border: solid 2px $blue;
+    font-size: $nav-font;
+    font-weight: bold;
+}
+
+.darkOutlineButton {
+    background-color: $white;
+    color: $dt-black;
+    width: 150px;
+    height: 45px;
+    border-radius: 20.5px;
+    border: solid 2px $dt-black;
     font-size: $nav-font;
     font-weight: bold;
 }
@@ -44,6 +72,24 @@
     }
 }
 
+.darkLongButton {
+    background-color: $white;
+    color: $dt-black;
+    width: 202px;
+    height: 45px;
+    border-radius: 20.5px;
+    border: none;
+    font-size: $nav-font;
+    font-weight: bold;
+    margin-top: 12px;
+    &:hover {
+        border-radius: 20.5px;
+        border: solid 2px $white;
+        background-color: $dt-black;
+        color: $white;
+    }
+}
+
 .sButton {
     width: 119px;
     height: 45px;
@@ -56,5 +102,20 @@
     &:hover {
         background-color: $white;
         color: $blue;
+    }
+}
+
+.darkSButton {
+    width: 119px;
+    height: 45px;
+    background-color: $dt-grey;
+    color: $white;
+    border-radius: 20.5px;
+    border: solid 1px $white;
+    font-size: 20px;
+    font-weight: 900;
+    &:hover {
+        background-color: $white;
+        color: $dt-grey;
     }
 }

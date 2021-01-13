@@ -1,38 +1,81 @@
-.myNavbar {
-    background-color: $blue;
-    @include breakpoint ($bpm-md) {
-    }
-    height: 50px;
-    color: white !important;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    &__logo {
-        padding: 0px;
-        margin-left: 6vw;
-    }
-    &__myNav {
+.light-theme {
+    .myNavbar {
         background-color: $blue;
-        width: 100%;
-        // background-color: red;
         @include breakpoint ($bpm-md) {
-            border-radius: 0 0 15px 15px;
-            text-align: center;
         }
-        &--dropdown {
-            padding-right: 93px;
+        height: 50px;
+        color: white !important;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        &__logo {
+            padding: 0px;
+            margin-left: 6vw;
+        }
+        &__myNav {
+            background-color: $blue;
+            width: 100%;
+            // background-color: red;
             @include breakpoint ($bpm-md) {
-                padding-right: 0px
+                border-radius: 0 0 15px 15px;
+                text-align: center;
             }
+            &--dropdown {
+                padding-right: 93px;
+                @include breakpoint ($bpm-md) {
+                    padding-right: 0px
+                }
+            }
+        }
+    }
+    
+    .menu {
+        color: $white !important;
+        font-size: $nav-font;
+        font-weight: bold;
+        margin-right: 30px;
+        &:hover {
+            font-weight: 900;
+            font-style: italic;
         }
     }
 }
 
-.menu {
-    color: $white !important;
-    font-size: $nav-font;
-    font-weight: bold;
-    margin-right: 30px;
-    &:hover {
-        font-weight: 900;
-        font-style: italic;
+.dark-theme {
+    .myNavbar {
+        background-color: $dt-grey;
+        @include breakpoint ($bpm-md) {
+        }
+        height: 50px;
+        color: white !important;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        &__logo {
+            padding: 0px;
+            margin-left: 6vw;
+        }
+        &__myNav {
+            background-color: $dt-grey;
+            width: 100%;
+            // background-color: red;
+            @include breakpoint ($bpm-md) {
+                border-radius: 0 0 15px 15px;
+                text-align: center;
+            }
+            &--dropdown {
+                padding-right: 93px;
+                @include breakpoint ($bpm-md) {
+                    padding-right: 0px
+                }
+            }
+        }
+    }
+    
+    .menu {
+        color: $white !important;
+        font-size: $nav-font;
+        font-weight: bold;
+        margin-right: 30px;
+        &:hover {
+            font-weight: 900;
+            font-style: italic;
+        }
     }
 }

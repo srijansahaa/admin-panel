@@ -14,6 +14,22 @@
     }
 }
 
+.darkSecHeadings {
+    color: $white;
+    font-size: $section-head;
+    font-weight: 900;
+    letter-spacing: 2.4px;
+    text-transform: uppercase !important;
+    margin: 55px 0;
+    &:after {
+        content: "";
+        width: 86px;
+        height: 9px;
+        display: inline-block;
+        background: $dt-grey;
+    }
+}
+
 .secHeadingsWhite {
     color: $white;
     font-size: $section-head;
