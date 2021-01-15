@@ -17,11 +17,13 @@ function Experiencelogos(themeType) {
                             src={elixar}
                             style={{width: "242px"}}
                             alt="Elixar"
+                            title="Elixar Technologies"
                         />
                         <LazyLoadImage
                             src={IET}
                             style={{width: "327px"}}
                             alt="SRM IET On Campus"
+                            title="SRM IET On Campus"
                         />
                 </div>
                 <div className="row d-flex justify-content-between">
@@ -29,11 +31,13 @@ function Experiencelogos(themeType) {
                             src={Alexa}
                             style={{width: "430px"}}
                             alt="Alexa Developers SRM"
+                            title="Alexa Developers SRM"
                         />
                         <LazyLoadImage
                             src={Aaruush}
                             style={{width: "278px"}}
                             alt="Aaruush - Techno Management Fest"
+                            title="Aaruush - Techno Management Fest"
                         />
                 </div>
                 <div className="row d-flex justify-content-between">
@@ -41,16 +45,19 @@ function Experiencelogos(themeType) {
                             src={Solera}
                             style={{width: "103.5px", padding: "0"}}
                             alt="Solera"
+                            title="Solera Life Sciences Private Limited"
                         />
                         <LazyLoadImage
                             src={Rotaract}
                             style={{width: "420px"}}
                             alt="Rotaract Club of SRM"
+                            title="Rotaract Club of SRM"
                         />
                         <LazyLoadImage
                             src={NEO}
                             style={{width: "93px"}}
                             alt="National Engineering Olympiad"
+                            title="National Engineering Olympiad"
                         />
                 </div>
             </div>
