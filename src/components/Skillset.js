@@ -1,9 +1,14 @@
 import React from 'react';
 import { ReactSVG } from 'react-svg'
+import "aos/dist/aos.css";
 
 const Skillset = ({name, percentage, icon, bar, themeType}) => {
     return (
-        <div className={themeType} style={{width: "504px"}}>
+        <div 
+            className={themeType} 
+            style={{width: "504px"}} 
+            data-aos="fade-up"
+        >
             <div className="skillSet">
                 <div className="row">
                     <div className="d-flex justify-content-between">

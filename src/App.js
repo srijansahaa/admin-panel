@@ -6,6 +6,8 @@ import Loader from './components/Loader';
 import Whatsapp from './components/Whatsapp';
 import darkModeIcon from './assets/Icons/darkModeIcon.png';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Aos from 'aos';
+import "aos/dist/aos.css";
 
 function App() {
   const [loading, setLoading] = useState(true)
@@ -14,6 +16,10 @@ function App() {
 
   useEffect(() => {
     setTimeout(() => setLoading(false), 4000)
+  }, [])
+
+  useEffect(() => {
+    Aos.init({ duration: 1000 })
   }, [])
 
   function changeBg() {

@@ -4,6 +4,7 @@ import Button from './Button';
 import Heading from './Heading';
 import Me from '../assets/Me.jpg'
 import Srijan from '../assets/SrijanSaha.pdf'
+import "aos/dist/aos.css";
 
 function About(themeType) {
     return (
@@ -21,10 +22,11 @@ function About(themeType) {
                                     className="me"
                                     alt="Srijan Saha"
                                     title="Srijan Saha"
+                                    data-aos="zoom-in-right"
                                 />
                             </div>
                             <div className="col-lg-7 col-12 d-flex flex-column aboutRight">
-                                <h2>I am Srijan</h2>
+                                <h2 data-aos="flip-up">I am Srijan</h2>
                                 <p>
                                     I'm a Computer Science Undergrad at SRMIST, Chennai
                                     currently in my second year. UI/UX Designer and a frontend web

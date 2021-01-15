@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Experiencetype = ({position, company, link, themeType}) => {
-    // console.log(themeType)
     return (
         <div className={themeType} style={{display: "flex", justifyContent: "center", flexDirection: 'column', width: "30%"}}>
             <div className="experienceType">
