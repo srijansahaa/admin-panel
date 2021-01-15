@@ -32,7 +32,7 @@ function App() {
             <div className="App">
               <Navbar themeType={darkTheme ? "dark-theme" : "light-theme"}/>
               <button className={darkTheme ? "darkThemeSwitch" : "lightThemeSwitch"} onClick={changeBg}>
-                <LazyLoadImage width="30" src={darkModeIcon}/>
+                <LazyLoadImage width="30" title="Enable Dark Mode" src={darkModeIcon}/>
               </button>
               <Whatsapp themeType={darkTheme ? "dark-theme" : "light-theme"}/>
               <Footer className={darkTheme ? "dark-theme" : "light-theme"}/>

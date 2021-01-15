@@ -6,7 +6,7 @@ function Whatsapp(themeType) {
     
     return (
         <a href="https://wa.me/918225808241?text=Hey%20there!" className={themeType.themeType === "dark-theme" ? "darkWhatsapp" : "lightWhatsapp"}>
-            <LazyLoadImage width="30" src={whatsappIcon} alt="Whatsapp"/>
+            <LazyLoadImage width="30" src={whatsappIcon} alt="Whatsapp" title="Hey There!"/>
         </a>
     )
 }

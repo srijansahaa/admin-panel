@@ -49,6 +49,7 @@ function Landing(themeType) {
                             <LazyLoadImage 
                                 src={themeType.themeType.themeType === "dark-theme" ? DarkLandingImg : LandingImg} 
                                 alt="Web Developer and Designer"
+                                title="Designiner and Developer"
                             />
                         </div>
                     </div>

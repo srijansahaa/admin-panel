@@ -25,6 +25,7 @@ function Navbar(themeType) {
                             alt="Srijan Saha"
                             width="30"
                             height="30"
+                            title="Srijan Saha"
                         />
                     </Link>
 
