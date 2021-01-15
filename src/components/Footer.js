@@ -9,13 +9,14 @@ import Github from '../assets/Icons/Github.svg';
 import Email from '../assets/Icons/Email.svg';
 import Behance from '../assets/Icons/Behance.svg';
 import {Link} from 'react-router-dom';
+import "aos/dist/aos.css";
 
 function Footer(themeType) {
     return (
         <div className={themeType.themeType}>
             <div className="container footer">
                 <div className="row">
-                    <div className="col-12 col-md-4 d-flex justify-content-start align-items-center footer__Left"><Link to="/"><LazyLoadImage src={Icon} alt="Srijan Saha" title="Srijan Saha"/></Link></div>
+                    <div className="col-12 col-md-4 d-flex justify-content-start align-items-center footer__Left"><Link to="/"><LazyLoadImage src={Icon} alt="Srijan Saha" title="Srijan Saha" data-aos="slide-right"/></Link></div>
                     <div className="col-12 col-md-4 d-flex justify-content-center flex-column">
                         <div className="d-flex justify-content-center">
                             <a href="https://www.facebook.com/srijan.saha3" className="footer__icons"><ReactSVG className="fab icon-last icons" src={Facebook}/></a>
@@ -29,7 +30,7 @@ function Footer(themeType) {
                         </div>
                         <div className="d-flex justify-content-center footer__credits">Made with  &hearts;  by Srijan Saha !</div>
                     </div>
-                    <div className="col-12 col-md-4 d-flex justify-content-center align-items-center footer__copyright">© Copyright 2020</div>
+                    <div className="col-12 col-md-4 d-flex justify-content-center align-items-center footer__copyright" data-aos="slide-left">© Copyright 2020</div>
                 </div>
             </div>
         </div>
