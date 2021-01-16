@@ -35,6 +35,14 @@
         &:hover {
             font-weight: 900;
             font-style: italic;
+            &:after {
+                content: "";
+                width: 60px;
+                height: 1px;
+                display: inline-block;
+                background: $white;
+                margin-left: 5px;
+            }
         }
     }
 }
@@ -76,6 +84,14 @@
         &:hover {
             font-weight: 900;
             font-style: italic;
+            &:after {
+                content: "";
+                width: 60px;
+                height: 1px;
+                display: inline-block;
+                background: $white;
+                margin-left: 5px;
+            }
         }
     }
 }

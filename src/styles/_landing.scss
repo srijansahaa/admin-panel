@@ -247,3 +247,39 @@
         }
     }
 }
+
+#face {
+    animation: face_ani 1s ease-in-out infinite alternate; 
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+#wheel-1, #wheel-2 {
+    animation: wheel 4s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes wheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes face_ani{
+    from{
+        transform: rotateX(0deg);
+    }
+    to{
+        transform: rotateX(30deg);
+    }
+}
+
+@keyframes example {
+    0%   { left:0px; top:0px;}
+    50%  { left:200px; top:0px;}
+    100%  { left:0px; top:0px;}
+  }
