@@ -30,7 +30,7 @@ function Footer(themeType) {
                         </div>
                         <div className="d-flex justify-content-center footer__credits">Made with  &hearts;  by Srijan Saha !</div>
                     </div>
-                    <div className="col-12 col-md-4 d-flex justify-content-center align-items-center footer__copyright" data-aos="slide-left">© Copyright 2020</div>
+                    <div className="col-12 col-md-4 d-flex justify-content-center align-items-center footer__copyright">© Copyright 2020</div>
                 </div>
             </div>
         </div>
