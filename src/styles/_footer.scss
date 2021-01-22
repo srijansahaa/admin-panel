@@ -65,7 +65,6 @@
         position: absolute;
         @include breakpoint ($bpm-sm) {
             height: 75vh;
-            // flex-direction: column !important;
         }
         .row {
             height: 100%;
