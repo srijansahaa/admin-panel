@@ -13,6 +13,9 @@
         align-items: stretch;
         justify-content: center;
         margin: 10px 0;
+        @include breakpoint (max-width 504px) {
+            width: 95%;
+        }
         &:hover {
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 1.00));
             font-style: italic;
@@ -24,6 +27,9 @@
             border-radius: 3px;
             display: flex;
             justify-content: flex-start;
+            @include breakpoint (max-width 504px) {
+                width: 90%;
+            }
             &--bar {
                 height: 5px;
                 background-color: $white;
@@ -47,6 +53,9 @@
         align-items: stretch;
         justify-content: center;
         margin: 10px 0;
+        @include breakpoint (max-width 504px) {
+            width: 95%;
+        }
         &:hover {
             filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 1.00));
             font-style: italic;
@@ -58,6 +67,9 @@
             border-radius: 3px;
             display: flex;
             justify-content: flex-start;
+            @include breakpoint (max-width 504px) {
+                width: 90%;
+            }
             &--bar {
                 height: 5px;
                 background-color: $white;
