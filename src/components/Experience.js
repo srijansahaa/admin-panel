@@ -10,7 +10,7 @@ function Experience(themeType) {
                 <Heading heading={"Experience"} version={themeType.themeType.themeType === "dark-theme" ? "darkSecHeadings" : "secHeadings"}/>
             </div>
             <div className="container">
-                <div className="row d-flex justify-content-around">
+                <div className="row d-flex align-items-center justify-content-around flex-column flex-sm-row">
                     <Experiencetype 
                         position={"Creatives Associate"}
                         company={"Alexa Developers SRM"}
@@ -24,7 +24,7 @@ function Experience(themeType) {
                         themeType={themeType.themeType.themeType}
                     />
                 </div>
-                <div className="row d-flex justify-content-around">
+                <div className="row d-flex align-items-center justify-content-around flex-column flex-sm-row">
                     <Experiencetype 
                         position={"Director of Media & Content"}
                         company={"Rotaract Club of SRM"}
@@ -38,7 +38,7 @@ function Experience(themeType) {
                         themeType={themeType.themeType.themeType}
                     />
                 </div>
-                <div className="row d-flex justify-content-around">
+                <div className="row d-flex align-items-center justify-content-around flex-column flex-sm-row">
                     <Experiencetype 
                         position={"Office Bearer"}
                         company={"SRM IET On Campus"}
@@ -52,7 +52,7 @@ function Experience(themeType) {
                         themeType={themeType.themeType.themeType}
                     />
                 </div>
-                <div className="row d-flex justify-content-around">
+                <div className="row d-flex align-items-center justify-content-around flex-column flex-sm-row">
                     <Experiencetype 
                         position={"Initiatives Member"}
                         company={"AARUUSH - National Level Fest"}

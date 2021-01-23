@@ -60,6 +60,12 @@
     }
 }
 
+#experience {
+    @include breakpoint ($bpm-xs) {
+        width: 90% !important;
+    }
+}
+
 .light-theme {
     .experienceLogos {
         width: 1077px;
