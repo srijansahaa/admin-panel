@@ -13,7 +13,7 @@
         align-items: stretch;
         justify-content: center;
         margin: 10px 0;
-        @include breakpoint (max-width 504px) {
+        @include breakpoint ($bpm-xs) {
             width: 95%;
         }
         &:hover {
@@ -27,7 +27,7 @@
             border-radius: 3px;
             display: flex;
             justify-content: flex-start;
-            @include breakpoint (max-width 504px) {
+            @include breakpoint ($bpm-xs) {
                 width: 90%;
             }
             &--bar {
@@ -53,7 +53,7 @@
         align-items: stretch;
         justify-content: center;
         margin: 10px 0;
-        @include breakpoint (max-width 504px) {
+        @include breakpoint ($bpm-xs) {
             width: 95%;
         }
         &:hover {
@@ -67,7 +67,7 @@
             border-radius: 3px;
             display: flex;
             justify-content: flex-start;
-            @include breakpoint (max-width 504px) {
+            @include breakpoint ($bpm-xs) {
                 width: 90%;
             }
             &--bar {
