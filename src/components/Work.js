@@ -8,6 +8,7 @@ import Unsplash from '../assets/Unsplash.PNG';
 import InstructorHQ from '../assets/InstructorHQ.PNG';
 import Maynooth from '../assets/Maynooth.PNG';
 import RentedPlanet from '../assets/RentedPlanet.png';
+import ShivaIndustries from '../assets/ShivaIndustries.png'
 
 function Work(themeType) {
     return (
@@ -63,6 +64,12 @@ function Work(themeType) {
                         image={RentedPlanet}
                         link={"https://www.figma.com/file/I1dduSEBxhOde77icGT17A/UI?node-id=0%3A1"}
                         type={"UI DESIGN"}
+                        themeType={themeType.themeType.themeType}
+                    />
+                    <Worktiles
+                        image={ShivaIndustries}
+                        link={"https://www.sumocement.in"}
+                        type={"WEBSITE"}
                         themeType={themeType.themeType.themeType}
                     />
                 </div>
