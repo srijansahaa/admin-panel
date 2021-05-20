@@ -46,9 +46,9 @@ function Experience(themeType) {
                         themeType={themeType.themeType.themeType}
                     />
                     <Experiencetype 
-                        position={"Campus Ambassador"}
-                        company={"National Engineering Olympiad"}
-                        link="https://nationalolympiad.org/"
+                        position={"Graphic Designer"}
+                        company={"TWF Flours"}
+                        link="https://twfflours.com/"
                         themeType={themeType.themeType.themeType}
                     />
                 </div>
@@ -57,6 +57,12 @@ function Experience(themeType) {
                         position={"Initiatives Member"}
                         company={"AARUUSH - National Level Fest"}
                         link="https://aaruush.org/"
+                        themeType={themeType.themeType.themeType}
+                    />
+                    <Experiencetype 
+                        position={"Campus Ambassador"}
+                        company={"National Engineering Olympiad"}
+                        link="https://nationalolympiad.org/"
                         themeType={themeType.themeType.themeType}
                     />
                 </div>

@@ -7,6 +7,7 @@ import Aaruush from '../assets/Logos/final/Aaruush.png';
 import Solera from '../assets/Logos/final/Solera.png';
 import Rotaract from '../assets/Logos/final/Rotaract.png';
 import NEO from '../assets/Logos/final/NEO.png';
+import TWF from '../assets/Logos/final/TWF.png';
 import "aos/dist/aos.css";
 
 function Experiencelogos(themeType) {
@@ -20,6 +21,13 @@ function Experiencelogos(themeType) {
                             alt="Elixar"
                             title="Elixar Technologies"
                             data-aos="slide-right"
+                        />
+                        <LazyLoadImage
+                            src={TWF}
+                            style={{width: "93px", height: "93px"}}
+                            alt="TWF Flour"
+                            title="TWF Flour"
+                            data-aos="slide-up"
                         />
                         <LazyLoadImage
                             src={IET}
