@@ -8,7 +8,9 @@ import Unsplash from '../assets/Unsplash.PNG';
 import InstructorHQ from '../assets/InstructorHQ.PNG';
 import Maynooth from '../assets/Maynooth.PNG';
 import RentedPlanet from '../assets/RentedPlanet.png';
-import ShivaIndustries from '../assets/ShivaIndustries.png'
+import ShivaIndustries from '../assets/ShivaIndustries.png';
+import JKCement from '../assets/JKCement.PNG';
+import Referroute from '../assets/Referroute.PNG';
 
 function Work(themeType) {
     return (
@@ -69,6 +71,20 @@ function Work(themeType) {
                     <Worktiles
                         image={ShivaIndustries}
                         link={"https://www.sumocement.in"}
+                        type={"WEBSITE"}
+                        themeType={themeType.themeType.themeType}
+                    />
+                </div>
+                <div className="row d-flex justify-content-around workRows">
+                    <Worktiles
+                        image={JKCement}
+                        link={"https://www.jumbocement.co.in"}
+                        type={"WEBSITE"}
+                        themeType={themeType.themeType.themeType}
+                    />
+                    <Worktiles
+                        image={Referroute}
+                        link={"https://referroute.netlify.app/"}
                         type={"WEBSITE"}
                         themeType={themeType.themeType.themeType}
                     />
