@@ -13,6 +13,70 @@ import firebaseIcon from '../assets/Icons/firebaseIcon.svg'
 import figmaIcon from '../assets/Icons/figmaIcon.svg'
 
 function Skills(themeType) {
+
+    const skillContent = [
+        {
+            id: 0,
+            sName: "REACT JS",
+            sPer: "80%",
+            sImg: ReactIcon
+        },
+        {
+            id: 1,
+            sName: "HTML 5",
+            sPer: "90%",
+            sImg: htmlIcon
+        },
+        {
+            id: 2,
+            sName: "CSS3/SCSS",
+            sPer: "90%",
+            sImg: cssIcon
+        },
+        {
+            id: 3,
+            sName: "JAVASCRIPT",
+            sPer: "70%",
+            sImg: jsIcon
+        },
+        {
+            id: 4,
+            sName: "BOOTSTRAP",
+            sPer: "95%",
+            sImg: bootstrapIcon
+        },
+        {
+            id: 5,
+            sName: "UI/UX",
+            sPer: "95%",
+            sImg: uiIcon
+        },
+        {
+            id: 6,
+            sName: "Adobe Creative Suite",
+            sPer: "55%",
+            sImg: adobeIcon
+        },
+        {
+            id: 7,
+            sName: "Competetive Coding",
+            sPer: "60%",
+            sImg: ccIcon
+        },
+        {
+            id: 8,
+            sName: "FIREBASE",
+            sPer: "60%",
+            sImg: firebaseIcon
+        },
+        {
+            id: 9,
+            sName: "FIGMA",
+            sPer: "90%",
+            sImg: figmaIcon
+        },
+    ]
+
     return (
         <div>
             <div className="d-flex justify-content-center">
@@ -20,76 +84,17 @@ function Skills(themeType) {
             </div>
             <div className="container">
                 <div className="row" style={{display: "flex", justifyContent: "space-evenly"}}>
-                    <Skillset
-                        name={"REACT JS"}
-                        percentage={"80%"}
-                        bar="80%"
-                        icon={ReactIcon}
-                        themeType={themeType.themeType.themeType}
-                    />
-                    <Skillset
-                        name={"HTML 5"}
-                        percentage={"90%"}
-                        bar="90%"
-                        icon={htmlIcon}
-                        themeType={themeType.themeType.themeType}
-                    />
-                    <Skillset
-                        name={"CSS3/SCSS"}
-                        percentage={"90%"}
-                        bar="90%"
-                        icon={cssIcon}
-                        themeType={themeType.themeType.themeType}
-                    />
-                    <Skillset
-                        name={"JAVASCRIPT"}
-                        percentage={"70%"}
-                        bar="70%"
-                        icon={jsIcon}
-                        themeType={themeType.themeType.themeType}
-                    />
-                    <Skillset
-                        name={"BOOTSTRAP"}
-                        percentage={"80%"}
-                        bar="80%"
-                        icon={bootstrapIcon}
-                        themeType={themeType.themeType.themeType}
-                    />
-                    <Skillset
-                        name={"UI/UX"}
-                        percentage={"95%"}
-                        bar="95%"
-                        icon={uiIcon}
-                        themeType={themeType.themeType.themeType}
-                    />
-                    <Skillset
-                        name={"Adobe Creative Suite"}
-                        percentage={"55%"}
-                        bar="55%"
-                        icon={adobeIcon}
-                        themeType={themeType.themeType.themeType}
-                    />
-                    <Skillset
-                        name={"Competetive Coding"}
-                        percentage={"60%"}
-                        bar="60%"
-                        icon={ccIcon}
-                        themeType={themeType.themeType.themeType}
-                    />
-                    <Skillset
-                        name={"FIREBASE"}
-                        percentage={"60%"}
-                        bar="60%"
-                        icon={firebaseIcon}
-                        themeType={themeType.themeType.themeType}
-                    />
-                    <Skillset
-                        name={"FIGMA"}
-                        percentage={"80%"}
-                        bar="80%"
-                        icon={figmaIcon}
-                        themeType={themeType.themeType.themeType}
-                    />
+                    {skillContent.map((s) => 
+                            <Skillset 
+                                key={s.id} 
+                                name={s.sName}
+                                percentage={s.sPer}
+                                bar={s.sPer}
+                                icon={s.sImg}
+                                themeType={themeType.themeType.themeType}
+                            />
+                        )
+                    }
                 </div>
             </div>
         </div>
