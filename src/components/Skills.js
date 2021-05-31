@@ -59,7 +59,7 @@ function Skills(themeType) {
         },
         {
             id: 7,
-            sName: "Competetive Coding",
+            sName: "Competitive Coding",
             sPer: "60%",
             sImg: ccIcon
         },

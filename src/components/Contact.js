@@ -17,9 +17,9 @@ function Contact(themeType) {
             number: number,
             message: message,
         })
-        .then(() => {
-            alert('Message has been submitted ✨')
-        })
+        // .then(() => {
+        //     alert('Message has been submitted ✨')
+        // })
         .catch((error) => {
             alert(error.message);
         });
@@ -76,8 +76,21 @@ function Contact(themeType) {
                             />
                         </div>
                         {/* <Button text={"Submit"} version={"outlineButton"}/> */}
-                        <button type="submit" className={themeType.themeType.themeType === "dark-theme" ? "darkOutlineButton" : "outlineButton"}>Submit</button>
+                        <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" className={themeType.themeType.themeType === "dark-theme" ? "darkOutlineButton" : "outlineButton"}>Submit</button>
                     </form>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="contact__modal modal-content">
+                            <div class="contact__modal--text modal-body">
+                                Message has been submitted ✨
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" className={themeType.themeType.themeType === "dark-theme" ? "darkBlockButton mx-auto" : "blockButton mx-auto"} data-bs-dismiss="modal">Close</button>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
