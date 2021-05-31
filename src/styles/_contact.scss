@@ -2,7 +2,6 @@
     .contact {
         margin-top: 100px;
         display: flex;
-        // justify-content: center;
         align-items: center;
         flex-direction: column;
         background-color: $blue;
@@ -40,6 +39,14 @@
             height: 223px;
             margin-bottom: 47px;
         }
+        &__modal {
+            border: 1px solid $blue;
+            &--text {
+                color: $blue;
+                text-align: center;
+                font-size: $base-text;
+            }
+        }
     }
 }
 
@@ -47,7 +54,6 @@
     .contact {
         margin-top: 100px;
         display: flex;
-        // justify-content: center;
         align-items: center;
         flex-direction: column;
         background-color: $dt-grey;
@@ -84,6 +90,15 @@
             padding-top: 10px;
             height: 223px;
             margin-bottom: 47px;
+        }
+        &__modal {
+            background-color: $dt-black;
+            border: 1px solid $white;
+            &--text {
+                color: $white;
+                text-align: center;
+                font-size: $base-text;
+            }
         }
     }
 }

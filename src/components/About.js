@@ -2,8 +2,8 @@ import React from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Button from './Button'; 
 import Heading from './Heading';
-import Me from '../assets/Me.jpg'
-import Srijan from '../assets/SrijanSaha.pdf'
+import SrijanImg from '../assets/Srijan.jpg';
+import Srijan from '../assets/SrijanSaha.pdf';
 import "aos/dist/aos.css";
 
 function About(themeType) {
@@ -18,7 +18,7 @@ function About(themeType) {
                         <div className="row">
                             <div className="col-lg-5 col-12 d-flex justify-content-center aboutLeft">
                                 <LazyLoadImage
-                                    src={Me}
+                                    src={SrijanImg}
                                     className="me"
                                     alt="Srijan Saha"
                                     title="Srijan Saha"

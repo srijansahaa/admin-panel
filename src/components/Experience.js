@@ -40,7 +40,7 @@ function Experience(themeType) {
                 </div>
                 <div className="row d-flex align-items-center justify-content-around flex-column flex-sm-row">
                     <Experiencetype 
-                        position={"Office Bearer"}
+                        position={"Joint Secretary"}
                         company={"SRM IET On Campus"}
                         link="https://www.theiet.org/"
                         themeType={themeType.themeType.themeType}
@@ -63,6 +63,14 @@ function Experience(themeType) {
                         position={"Campus Ambassador"}
                         company={"National Engineering Olympiad"}
                         link="https://nationalolympiad.org/"
+                        themeType={themeType.themeType.themeType}
+                    />
+                </div>
+                <div className="row d-flex align-items-center justify-content-around flex-column flex-sm-row">
+                    <Experiencetype 
+                        position={"Web Developer"}
+                        company={"Referoute"}
+                        link="https://referoute.in/"
                         themeType={themeType.themeType.themeType}
                     />
                 </div>
