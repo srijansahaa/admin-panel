@@ -2,13 +2,15 @@
     .contact {
         margin-top: 100px;
         display: flex;
-        align-items: center;
         flex-direction: column;
         background-color: $blue;
         color: $white;
         width: 45%;
         border-radius: 20px;
         padding-bottom: 40px;
+        h1 {
+            text-align: center;
+        }
         @include breakpoint ($bpm-md) {
             width: 90%;
         }
@@ -47,6 +49,51 @@
                 font-size: $base-text;
             }
         }
+        h3 {
+            font-size: 30px;
+            font-weight:600;
+            text-align: center;
+            &:before {
+                content: "";
+                background-color: $white;
+                height: 1px;
+                width: 50px;
+                display: inline-block;
+            }
+        }
+        hr {
+            color: $white;
+            width: 80%;
+            height: 2px;
+            margin: 54px 0;
+        }
+        &__bottom {
+            padding: 0 64px;
+            &--icons {
+                background-color: transparent;
+                border: 3px solid #FFFFFF;
+                border-radius: 8px;
+                padding: 10px;
+                &:hover {
+                    background-color: $blue-sec;
+                }
+                &:nth-child(2) {
+                    margin: 0 30px;
+                }
+            }
+            div {
+                &:nth-child(2) {
+                    margin: 30px 0;
+                }
+            }
+            .contactLinks {
+                font-size: $nav-font;
+                font-weight: bold;
+                margin-left: 30px;
+                text-decoration: none;
+                color: $white;
+            }
+        }
     }
 }
 
@@ -54,13 +101,15 @@
     .contact {
         margin-top: 100px;
         display: flex;
-        align-items: center;
         flex-direction: column;
         background-color: $dt-grey;
         color: $white;
         width: 45%;
         border-radius: 20px;
         padding-bottom: 40px;
+        h1 {
+            text-align: center;
+        }
         @include breakpoint ($bpm-md) {
             width: 90%;
         }
@@ -98,6 +147,39 @@
                 color: $white;
                 text-align: center;
                 font-size: $base-text;
+            }
+        }
+        hr {
+            color: $white;
+            width: 80%;
+            height: 2px;
+            margin: 54px 0;
+        }
+        &__bottom {
+            padding: 0 64px;
+            &--icons {
+                background-color: transparent;
+                border: 3px solid #FFFFFF;
+                border-radius: 8px;
+                padding: 10px;
+                &:hover {
+                    background-color: $dt-black;
+                }
+                &:nth-child(2) {
+                    margin: 0 30px;
+                }
+            }
+            div {
+                &:nth-child(2) {
+                    margin: 30px 0;
+                }
+            }
+            .contactLinks {
+                font-size: $nav-font;
+                font-weight: bold;
+                margin-left: 30px;
+                text-decoration: none;
+                color: $white;
             }
         }
     }

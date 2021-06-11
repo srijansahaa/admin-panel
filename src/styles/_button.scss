@@ -41,6 +41,11 @@
     border: solid 2px $blue;
     font-size: $nav-font;
     font-weight: bold;
+    &:hover {
+        background-color: transparent;
+        border-color: $white;
+        color: $white;
+    }
 }
 
 .darkOutlineButton {
@@ -52,6 +57,11 @@
     border: solid 2px $dt-black;
     font-size: $nav-font;
     font-weight: bold;
+    &:hover {
+        background-color: transparent;
+        border-color: $white;
+        color: $white;
+    }
 }
 
 .longButton {
