@@ -1,6 +1,13 @@
 import React, { useState } from 'react';
 import Heading from './Heading';
 import {db} from '../firebase';
+import { ReactSVG } from 'react-svg';
+import Button from './Button';
+import Instagram from '../assets/Contact Page Icons/Instagram.svg';
+import Facebook from '../assets/Contact Page Icons/Facebook.svg';
+import Linkedin from '../assets/Contact Page Icons/Linkedin.svg';
+import Mail from '../assets/Contact Page Icons/Mail.svg';
+import Call from '../assets/Contact Page Icons/Call.svg';
 
 function Contact(themeType) {
     const [name, setName] = useState("");
@@ -75,20 +82,35 @@ function Contact(themeType) {
                                 onChange={(e) => setMessage(e.target.value)}
                             />
                         </div>
-                        {/* <Button text={"Submit"} version={"outlineButton"}/> */}
                         <button type="submit" data-bs-toggle="modal" data-bs-target="#exampleModal" className={themeType.themeType.themeType === "dark-theme" ? "darkOutlineButton" : "outlineButton"}>Submit</button>
                     </form>
 
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-centered">
-                            <div class="contact__modal modal-content">
-                            <div class="contact__modal--text modal-body">
+                    <div className="modal fade" id="exampleModal" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div className="modal-dialog modal-dialog-centered">
+                            <div className="contact__modal modal-content">
+                            <div className="contact__modal--text modal-body">
                                 Message has been submitted ✨
                             </div>
-                            <div class="modal-footer">
+                            <div className="modal-footer">
                                 <button type="button" className={themeType.themeType.themeType === "dark-theme" ? "darkBlockButton mx-auto" : "blockButton mx-auto"} data-bs-dismiss="modal">Close</button>
                             </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div className="d-flex justify-content-center"><hr/></div>
+
+                    <div className="contact__bottom">
+                        <div>
+                            <a href="https://www.instagram.com/srijansahaa/" type="button" className="contact__bottom--icons"><ReactSVG src={Instagram}/></a>
+                            <a href="https://www.facebook.com/srijan.saha3" type="button" className="contact__bottom--icons"><ReactSVG src={Facebook}/></a>
+                            <a href="https://www.instagram.com/srijansahaa/" type="button" className="contact__bottom--icons"><ReactSVG src={Linkedin}/></a>
+                        </div>
+                        <div>
+                            <a href="mailto:contact@srijansaha.tech" type="button" className="contact__bottom--icons"><ReactSVG src={Mail}/></a><a className="contactLinks" href="mailto:contact@srijansaha.tech">contact@srijansaha.tech</a>
+                        </div>
+                        <div>
+                            <a href="tel:8225808241" type="button" className="contact__bottom--icons"><ReactSVG src={Call}/></a><a className="contactLinks" href="tel:8225808241">+91-8225808241</a>
                         </div>
                     </div>
                 </div>
