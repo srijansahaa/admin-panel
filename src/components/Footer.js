@@ -25,7 +25,7 @@ function Footer(themeType) {
                         </div>
                         <div className="d-flex justify-content-center">
                         <a href="https://github.com/srijansahaa" className="footer__icons"><ReactSVG className="fab icon-last icons" src={Github}/></a>
-                            <a href="mailto:srijan1336@gmail.com" className="footer__icons"><ReactSVG className="fab icon-last icons" src={Email}/></a>
+                            <a href="mailto:contact@srijansaha.tech" className="footer__icons"><ReactSVG className="fab icon-last icons" src={Email}/></a>
                             <a href="https://www.behance.net/srijan-saha" className="footer__icons"><ReactSVG className="fab icon-last icons" src={Behance}/></a>
                         </div>
                         <div className="d-flex justify-content-center footer__credits">Made with  &hearts;  by Srijan Saha !</div>
