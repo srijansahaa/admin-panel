@@ -1,54 +1,13 @@
 import './styles/app.scss'
-import React, { useState, useEffect } from 'react'
-import Footer from './components/Footer'
-import Navbar from './components/Navbar'
-import Loader from './components/Loader';
-import Whatsapp from './components/Whatsapp';
-import darkModeIcon from './assets/Icons/darkModeIcon.png';
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import Aos from 'aos';
-import "aos/dist/aos.css";
+import React from 'react'
+import Admin from './components/Admin';
 
 function App() {
-  const [loading, setLoading] = useState(true)
-
-  const [darkTheme, setDarkTheme] = useState(false)
-
-  useEffect(() => {
-    setTimeout(() => setLoading(false), 4000)
-  }, [])
-
-  useEffect(() => {
-    Aos.init({ duration: 1000 })
-  }, [])
-
-  function changeBg() {
-    setDarkTheme(prevTheme => !prevTheme);
-    document.body.style.background = "#000"
-    if (darkTheme) {
-      document.body.style.background = "#fff";
-    }
-  }
 
   return (
-    <>
-      {
-        loading === false ? (
-          <div className={darkTheme ? "dark-theme" : "light-theme"}>
-            <div className="App">
-              <Navbar themeType={darkTheme ? "dark-theme" : "light-theme"}/>
-              <button className={darkTheme ? "darkThemeSwitch" : "lightThemeSwitch"} onClick={changeBg}>
-                <LazyLoadImage width="30" title="Enable Dark Mode" src={darkModeIcon}/>
-              </button>
-              <Whatsapp themeType={darkTheme ? "dark-theme" : "light-theme"}/>
-              <Footer className={darkTheme ? "dark-theme" : "light-theme"}/>
-            </div>
-          </div>
-        ) : (
-          <Loader themeType={darkTheme ? "dark-theme" : "light-theme"}/>
-        )
-      }
-    </>
+    <div className="App">
+      <Admin/>
+    </div>
   );
 }
 
