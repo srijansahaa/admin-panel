@@ -1,8 +1,115 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+import { ReactSVG } from 'react-svg';
+import { db } from '../firebase';
+import FirebaseLogo from '../assets/Logos/FirebaseLogo.svg'
+import {Link} from 'react-router-dom';
 
 const Admin = () => {
+
+    const [contact, setContact] = useState([])
+
+    // useEffect(() => {
+    //     fetchContacts();
+    // }, [])
+
+    // const fetchContacts=async()=> {
+    //     const response=db.collection('contact');
+    //     const data=await response.get();
+    //     data.docs.forEach(item=>{
+    //         setContact([item.data()])
+    //     })
+    // }
+
+    useEffect(() => {
+        const contacts =[]
+        db.collection('contact').get()
+        .then(snapshot => {
+            snapshot.docs.forEach(con => {
+                let currentID = con.id
+                let appObj = {...con.data(), ['id']: currentID}
+                contacts.push(appObj)
+
+                // contacts.push(con.data());
+            })
+            setContact(contacts)
+        })
+    },[])
+
+    function openWeb() {
+        const url = "https://www.srijansaha.tech/";
+        window.open(url, '_blank');
+    }
+
+    function openFirebase() {
+        const url = "https://console.firebase.google.com/u/0/";
+        window.open(url, '_blank');
+    }
+
+    // console.log(contact)
+
     return (
-        <div>Hello</div>
+        <div className="container admin">
+            <h1>
+                Admin Panel
+            </h1>
+            <div className="d-flex justify-content-between align-items-center mb-4">
+                <h2>
+                    Contact Form Responses <a href="https://www.srijansaha.tech/">(www.srijansaha.tech)</a>
+                </h2>
+                <ReactSVG src={FirebaseLogo}/>
+            </div>
+            <div className="container">
+                <div className="row admin__head">
+                    <div className="col-12 col-md-3">
+                        <label>I.D</label>
+                    </div>
+                    <div className="col-2 col-md-1">
+                        <label>Name</label>
+                    </div>
+                    <div className="col-2 col-md-2">
+                        <label>Email</label>
+                    </div>
+                    <div className="col-2 col-md-2">
+                        <label>Number</label>
+                    </div>
+                    <div className="col-6 col-md-4">
+                        <label>Message</label>
+                    </div>
+                </div>
+            </div>
+            <div className="container admin__content my-3">
+                {
+                    contact ?
+                    contact.map((c, index) => {
+                        return (
+                            <div className="row">
+                                <div className="col-12 col-md-3">
+                                    <label className="admin__content--id" key={index}>{c.id}</label>
+                                </div>
+                                <div className="col-2 col-md-1">
+                                    <label key={index}>{c.name}</label>
+                                </div>
+                                <div className="col-2 col-md-2">
+                                    <a href={`mailto:${c.email}`} key={index}>{c.email}</a>
+                                </div>
+                                <div className="col-2 col-md-2">
+                                    <a href={`tel:${c.number}`} key={index}>{c.number}</a>
+                                </div>
+                                <div className="col-6 col-md-4">
+                                    <label key={index}>{c.message}</label>
+                                </div>
+                            </div>
+                            // <div>Hello</div>
+                        )
+                    }) :
+                    <label>No response!</label>
+                }
+            </div>
+            <div className="row d-flex justify-content-center">
+                <button onClick={openWeb}>Website</button>
+                <button onClick={openFirebase}>Open Firebase</button>
+            </div>
+        </div>
     )
 }
 

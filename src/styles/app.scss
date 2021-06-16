@@ -1,46 +1,5 @@
 @import "variables";
-@import "navbar";
-@import "button";
-@import "heading";
-@import "landing";
-@import "about";
-@import "skillset";
-@import "experience";
-@import "work";
-@import "footer";
-@import "contact";
-@import "loader";
-@import "whatsapp";
-
-.darkThemeSwitch {
-    position: fixed;
-    bottom: 100px;
-    right: 30px;
-    background-color: $dt-grey;
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
-    z-index: 999;
-    border-color: none;
-}
-
-.lightThemeSwitch {
-    position: fixed;
-    bottom: 100px;
-    right: 30px;
-    background-color: $blue;
-    border-radius: 50px;
-    width: 50px;
-    height: 50px;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
-    z-index: 999;
-    border-color: none;
-}
+@import "admin";
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -58,4 +17,9 @@
 :root {
     scrollbar-color: $blue-sec $white !important;
     scrollbar-width: thin !important;
+}
+
+html, body {
+    background-color: #1D2329;
+    height: 100%;
 }
