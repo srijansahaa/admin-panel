@@ -41,6 +41,9 @@
             text-decoration: none;
             color: #738295;
         }
+        p, label, a {
+            word-wrap: break-word;
+        }
     }
     button {
         background-color: #09d3ac;
@@ -64,5 +67,11 @@
                 color: #FFFFFF;
             }
         }
+    }
+    &__footer {
+        text-align: center;
+        color: #09d3ac;
+        position: relative;
+        margin-top: 40px;
     }
 }

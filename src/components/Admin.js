@@ -2,23 +2,10 @@ import React, { useEffect, useState } from 'react';
 import { ReactSVG } from 'react-svg';
 import { db } from '../firebase';
 import FirebaseLogo from '../assets/Logos/FirebaseLogo.svg'
-import {Link} from 'react-router-dom';
 
 const Admin = () => {
 
     const [contact, setContact] = useState([])
-
-    // useEffect(() => {
-    //     fetchContacts();
-    // }, [])
-
-    // const fetchContacts=async()=> {
-    //     const response=db.collection('contact');
-    //     const data=await response.get();
-    //     data.docs.forEach(item=>{
-    //         setContact([item.data()])
-    //     })
-    // }
 
     useEffect(() => {
         const contacts =[]
@@ -44,8 +31,6 @@ const Admin = () => {
         const url = "https://console.firebase.google.com/u/0/";
         window.open(url, '_blank');
     }
-
-    // console.log(contact)
 
     return (
         <div className="container admin">
@@ -96,7 +81,7 @@ const Admin = () => {
                                     <a href={`tel:${c.number}`} key={index}>{c.number}</a>
                                 </div>
                                 <div className="col-6 col-md-4">
-                                    <label key={index}>{c.message}</label>
+                                    <p key={index}>{c.message}</p>
                                 </div>
                             </div>
                             // <div>Hello</div>
@@ -109,6 +94,8 @@ const Admin = () => {
                 <button onClick={openWeb}>Website</button>
                 <button onClick={openFirebase}>Open Firebase</button>
             </div>
+
+            <div className="admin__footer">Made with ♥ by Srijan Saha !</div>
         </div>
     )
 }
