@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { ReactSVG } from 'react-svg';
-import { db } from '../firebase';
+import firebaseApp, { db } from '../firebase';
 import FirebaseLogo from '../assets/Logos/FirebaseLogo.svg'
 
 const Admin = () => {
@@ -84,7 +84,6 @@ const Admin = () => {
                                     <p key={index}>{c.message}</p>
                                 </div>
                             </div>
-                            // <div>Hello</div>
                         )
                     }) :
                     <label>No response!</label>
@@ -93,6 +92,7 @@ const Admin = () => {
             <div className="row d-flex justify-content-center">
                 <button onClick={openWeb}>Website</button>
                 <button onClick={openFirebase}>Open Firebase</button>
+                <button onClick={() => {firebaseApp.auth().signOut()}}>Sign Out</button>
             </div>
 
             <div className="admin__footer">Made with ♥ by Srijan Saha !</div>
