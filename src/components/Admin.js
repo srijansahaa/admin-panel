@@ -45,8 +45,8 @@ const Admin = () => {
             </div>
             <div className="container">
                 <div className="row admin__head">
-                    <div className="col-12 col-md-3">
-                        <label>I.D</label>
+                    <div className="col-12 col-md-3 d-flex justify-content-center justify-content-md-start">
+                        <label className="admin__head--id">I.D</label>
                     </div>
                     <div className="col-2 col-md-1">
                         <label>Name</label>
@@ -68,7 +68,7 @@ const Admin = () => {
                     contact.map((c, index) => {
                         return (
                             <div className="row">
-                                <div className="col-12 col-md-3">
+                                <div className="col-12 col-md-3 d-flex justify-content-center justify-content-md-start">
                                     <label className="admin__content--id" key={index}>{c.id}</label>
                                 </div>
                                 <div className="col-2 col-md-1">
@@ -89,7 +89,7 @@ const Admin = () => {
                     <label>No response!</label>
                 }
             </div>
-            <div className="row d-flex justify-content-center">
+            <div className=" d-flex justify-content-center">
                 <button onClick={openWeb}>Website</button>
                 <button onClick={openFirebase}>Open Firebase</button>
                 <button onClick={() => {firebaseApp.auth().signOut()}}>Sign Out</button>

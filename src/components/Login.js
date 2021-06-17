@@ -2,6 +2,8 @@ import React, { useCallback, useContext } from 'react'
 import { Link, Redirect, withRouter } from 'react-router-dom';
 import { AuthContext } from '../Auth';
 import firebaseApp from '../firebase';
+import Icon_darkbg from '../assets/Icons/Icon_darkbg.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Login = ({history}) => {
 
@@ -29,6 +31,11 @@ const Login = ({history}) => {
 
     return (
         <div className="card forms">
+            <div className="d-flex justify-content-center">
+              <div className="forms__icon">
+                <LazyLoadImage src={Icon_darkbg} width="40"/>
+              </div>
+            </div>
             <div className="card-body">
                 <h1 className="card-title">Login - Admin Panel</h1>
                 <form onSubmit={handleLogin}>

@@ -1,6 +1,8 @@
 import React, { useCallback } from 'react'
 import { Link, withRouter } from 'react-router-dom';
 import firebaseApp from '../firebase';
+import Icon_darkbg from '../assets/Icons/Icon_darkbg.png';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const SignUp = ({history}) => {
 
@@ -19,6 +21,11 @@ const SignUp = ({history}) => {
 
     return (
         <div className="card forms">
+            <div className="d-flex justify-content-center">
+              <div className="forms__icon">
+                <LazyLoadImage src={Icon_darkbg} width="40"/>
+              </div>
+            </div>
             <div className="card-body">
                 <h1 className="card-title">Sign Up</h1>
                 <form onSubmit={handleSignUp}>

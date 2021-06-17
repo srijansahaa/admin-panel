@@ -1,6 +1,5 @@
 import React, { useContext } from 'react'
 import { AuthContext } from './Auth'
-import Admin from './components/Admin'
 import { Route, Redirect } from 'react-router'
 
 const PrivateRoute = ({component: Admin, ...rest}) => {
