@@ -35,7 +35,7 @@ const Admin = () => {
     return (
         <div className="container admin">
             <h1>
-                Admin Panel
+                Admin Panel -
             </h1>
             <div className="d-flex justify-content-between align-items-center mb-4">
                 <h2>
