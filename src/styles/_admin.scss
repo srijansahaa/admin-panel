@@ -15,17 +15,27 @@
     svg {
         width: 200px;
     }
+    &__scroll {
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+        @include breakpoint ($bpm-scroll) {
+            overflow-x: scroll;
+        }
+        &--head {
+            max-width: 1296px;
+            width: 1296px;
+        }
+    }
     &__head {
         border-radius: 8px;
         font-weight: 600;
         background-color: #343C43;
         font-size: 16px;
         padding: 20px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
         &--id {
             font-weight: 700;
             font-style: italic;
             @include breakpoint ($bpm-sm) {
-                // text-align: center;
                 margin-bottom: 20px;
             }
         }
@@ -35,6 +45,8 @@
         border-radius: 8px;
         font-size: 16px;
         color: #738295;
+        max-width: 1296px;
+        width: 1296px;
         .row {
             padding: 20px;
             &:nth-child(even) {
